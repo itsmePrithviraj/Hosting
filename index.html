@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Design</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(221, 161, 94);
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 500px;
+    height: 650px;
+    background-color:rgb(254, 250,224);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+  }
+
+  .card:hover {
+  box-shadow: 0 0 20px rgb(244, 243, 243); /* Add a subtle box shadow after hover */
+}
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-info {
+    font-size: 20px;
+    color: #555;
+  }
+  .navbar{
+    width: 80%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:beige;
+    position: relative;
+  display: inline-block;
+  color:beige; /* Text color */
+  text-decoration: none; /* Remove default underline */
+}
+.navbar ul li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the distance of the underline from text */
+  width: 0; /* Initially hidden */
+  height: 2px; /* Thickness of the underline */
+  background-color: beige; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth transition for underline width */
+}
+.navbar ul li a:hover::before {
+  width: 100%; /* Slide the underline to full width on hover */
+}
+
+header{
+    background-color: rgb(96, 108, 56);
+}
+a{
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits text color from parent */
+  outline: none; /* Removes focus outline */
+}
+button{
+  background-color: lightgreen;
+  border-width: 0px;
+}
+button:hover{
+  box-shadow: 0 0 20px rgba(225, 165, 108, 0.539);
+}
+footer {
+            margin-top: 30px;
+            text-align: center;
+            color:white;
+            background-color: orange;
+
+        }
+</style>
+</head>
+<body>
+    <header>
+    <div class="navbar" >
+        <img src="NEW LOGO 2.png" class="logo" width="150px;">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Counselors</a></li>
+            <li><a href="">Wellness tips</a></li>
+            <li><a href="">Help lines</a></li>
+        </ul>
+       
+
+    </div>
+    </header>
+
+<div class="container">
+  <a href="cmhfinal.html">
+  <div class="card">
+    <img src="cmh1.png" alt="Placeholder Image">
+    <div class="card-content">
+      <h1 class="card-title">Center for mental health</h1>
+      <p class="card-info">
+        Speciality:
+        <br> 
+        <br>
+        Rating: &#11088;&#11088;&#11088;&#11088;&#11088;
+        <br>
+        <br>
+
+        Address: Center for Mental Health 102, 201, Rajey apartment, Deepa housing society, Baner - Pashan Link Rd, Pune, Maharashtra 411021
+        <br>
+        <br>
+        <center><a href="https://www.centerformentalhealth.in/book-an-appointment/"><button><h3>Book an Appointment</h3></button></a></center>
+      </p>
+      
+    </div>
+  </a>
+  </div>
+<a href="bpt.html">
+  <div class="card">
+
+    <img src="butterflyclinic.jpg" alt="Placeholder Image">
+    <div class="card-content">
+      <h2 class="card-title">Butterfly Psychotherapy Center</h2>
+      <p class="card-info">Speciality:
+        <br> 
+        <br>
+        Rating: &#11088;&#11088;&#11088;&#11088;&#11088;
+        <br>
+        <br>
+
+        Address:  Flat no. 8, Building no. 22, Sakal Nagar, Aundh, Pune, Maharashtra 411007
+        <br>
+        <br>
+        <center><a href="https://butterflypsychotherapy.com/"><button><h3>Book an Appointment</h3></button></a></center>
+      </p></p>
+    </div>
+  </div>
+</a>
+<a href="msc.html">
+  <div class="card">
+    <img src="msc1.jpg" alt="Placeholder Image">
+    <div class="card-content">
+      <h2 class="card-title">Mindsight clinic</h2>
+      <p class="card-info">Speciality:
+        <br> 
+        <br>
+        Rating: &#11088;&#11088;&#11088;&#11088;&#11088;
+        <br>
+        <br>
+
+        Address: City Bay, kolte patil project, 201-A, Boat Club Rd, behind city point building, above Cafe Peter, Bund Garden, Sangamvadi, Pune, Maharashtra 411001
+        <br>
+        <br>
+        <center><a href="https://www.mindsightclinic.com/"><button><h3>Book an Appointment</h3></button></a></center>
+      </p></p>
+    </div>
+  </div>
+</a>
+<a href="peace.html">
+  <div class="card">
+    <img src="peace1.jpg" alt="Placeholder Image">
+    <div class="card-content">
+      <h2 class="card-title">Peace Of Mind</h2>
+      <p class="card-info">Speciality:
+        <br> 
+        <br>
+        Rating: &#11088;&#11088;&#11088;&#11088;&#11088;
+        <br>
+        <br>
+
+        Address: Flat no 4, Sunlit Apartment, Prabhat Film Rd, off Ashok Path, opposite FTII, Shanti Sheela Society, City Road, Erandwane, Pune, Maharashtra 411004
+        <br>
+        <br>
+        <center><a href="https://peaceofmind.co.in/appointments/"><button><h3>Book an Appointment</h3></button></a></center>
+      </p></p>
+    </div>
+  </div>
+</a>
+<a href="livwell.html">
+  <div class="card">
+    <img src="Livwell-Happier-Minds-Gallery-2.jpg" alt="Placeholder Image">
+    <div class="card-content">
+      <h2 class="card-title">Livwell clinic</h2>
+      <p class="card-info">Speciality:
+        <br> 
+        <br>
+        Rating: &#11088;&#11088;&#11088;&#11088;&#11088;
+        <br>
+        <br>
+
+        Address: Shop 106, 108, 110, First Floor, White Square Building, Hinjawadi - Wakad Rd, Hinjawadi Village, Hinjawadi, Pune, Pimpri-Chinchwad, Maharashtra 411057
+        <br>
+        <br>
+        <center><a href="https://www.livwellhappierminds.com/book-an-appointment/"><button><h3>Book an Appointment</h3></button></a></center>
+      </p></p>
+    </div>
+  </div>
+</a>
+<a href="urban.html">
+  <div class="card">
+    <img src="urban logo.png" alt="Placeholder Image">
+    <div class="card-content">
+      <h2 class="card-title">Urban Counsellor</h2>
+      <p class="card-info">Speciality:
+        <br> 
+        <br>
+        Rating: &#11088;&#11088;&#11088;&#11088;&#11088;
+        <br>
+        <br>
+
+        Address: Govind Gdn Rd, Ganeesham Phase 2, Sai Nagar Park, Pimple Gurav, Pune, Pimpri-Chinchwad, Maharashtra 411019
+        <br>
+        <br>
+        <center><a href="https://urbancounsellor.com/get-started-self/"><button><h3>Book an Appointment</h3></button></a></center>
+      </p></p>
+    </div>
+  </div>
+</a>
+<a href="catalyst.html">
+  <div class="card">
+    <img src="catalyst 1.jpeg" alt="Placeholder Image">
+    <div class="card-content">
+      <h2 class="card-title">PsychCatalyst</h2>
+      <p class="card-info">Speciality:
+        <br> 
+        <br>
+        Rating: &#11088;&#11088;&#11088;&#11088;&#11088;
+        <br>
+        <br>
+
+        Address: The Phase E, Sunshree, NIBM Rd, near IDBI Bank, Clover Hills, Kondhwa, Pune, Maharashtra 411048
+        <br>
+        <br>
+         <center><a href="https://psychcatalyst.in/contact-us/"><button><h3>Book an Appointment</h3></button></a></center>
+      </p></p>
+    </div>
+  </div>
+</a>
+<a href="healin.html">
+  <div class="card">
+    <img src="heal in.jpg" alt="Placeholder Image">
+    <div class="card-content">
+      <h2 class="card-title">Heal in</h2>
+      <p class="card-info">Speciality:
+        <br> 
+        <br>
+        Rating: &#11088;&#11088;&#11088;&#11088;&#11088;
+        <br>
+        <br>
+
+        Address: Oil Engineering, 102, Rainbow Apt, Laxmanrao Kirloskar Rd, opp. Kirloskar, Khadki, Pune, Maharashtra 411003
+        <br>
+        <br>
+        <center><a href="https://heal-in.in/find%20a%20therapist%20form"><button><h3>Book an Appointment</h3></button></a></center>
+      </p></p>
+    </div>
+  </div>
+</a>
+ 
+</div>
+
+</body>
+<footer>
+  <p>&copy; 2024 Social Support Guide. All rights reserved.</p>
+ 
+  <br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</footer>
+</html>
